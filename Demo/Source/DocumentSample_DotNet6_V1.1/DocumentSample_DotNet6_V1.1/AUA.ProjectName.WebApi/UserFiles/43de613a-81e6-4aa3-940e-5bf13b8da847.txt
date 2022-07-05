@@ -1,0 +1,1 @@
+https://git.ir/pluralsight-securing-asp-net-core-3-with-oauth2-and-openid-connect/

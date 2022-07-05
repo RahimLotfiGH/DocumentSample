@@ -1,0 +1,48 @@
+﻿<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+    const lodingDivId="#lodingDiv";
+    const tbodyId="#Tbody";
+
+        $.get( "https://localhost:7032/api/V1.0/Document/GetDocumentsAysnc", function( data ) {
+            showData(data.result)
+            hiddnSpinner();
+        });
+
+        function showData(data ){
+             var rowNumber=1;
+
+             jQuery.each( data, function( i, val ) {
+
+                 addRow(val,rowNumber);
+
+                 rowNumber++;
+               });
+        }
+
+        function  addRow(val,rowNumber){
+               $(tbodyId).append('<tr>');
+               $(tbodyId).append('<th>'+rowNumber+'</th>');
+               $(tbodyId).append('<th>'+val.documentName+'</th>');
+               $(tbodyId).append('<th><img src="../images/'+val.documentType.iconName+'" style="width:50px;height:50px"/></th>');
+               $(tbodyId).append('<th>'+val.documentType.typeName+'</th>');
+               $(tbodyId).append('<th scope="row">'+val.registrationDate+'</th>');
+               $(tbodyId).append('<th>'+val.downloadCount+'</th>');
+               $(tbodyId).append('<th> <a target="_blank" href="https://localhost:7032/api/V1.0/Document/DownloadDocumentAysnc?fileKey='+val.fileKey+'">Download</a></th>');
+               $(tbodyId).append('</tr>');
+
+        }
+
+        function downloadFile(fileKey){
+              $.get( "https://localhost:7032/api/V1.0/Document/DownloadDocumentAysnc/fileKey="+fileKey, function( data ) {
+            showData(data.result)
+        });
+        }
+
+        function  hiddnSpinner()
+        {
+            $(lodingDivId).hide();
+        }
+
+</script>

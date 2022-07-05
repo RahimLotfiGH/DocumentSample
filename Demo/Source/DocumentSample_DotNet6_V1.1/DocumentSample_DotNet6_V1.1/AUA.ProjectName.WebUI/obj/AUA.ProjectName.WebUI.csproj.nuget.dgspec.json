@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ABC\\Desktop\\Sample\\AUA_WebApi_DotNet6_V1.1\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.WebUI\\AUA.ProjectName.WebUI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ABC\\Desktop\\Sample\\AUA_WebApi_DotNet6_V1.1\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.WebUI\\AUA.ProjectName.WebUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ABC\\Desktop\\Sample\\AUA_WebApi_DotNet6_V1.1\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.WebUI\\AUA.ProjectName.WebUI.csproj",
+        "projectName": "AUA.ProjectName.WebUI",
+        "projectPath": "C:\\Users\\ABC\\Desktop\\Sample\\AUA_WebApi_DotNet6_V1.1\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.WebUI\\AUA.ProjectName.WebUI.csproj",
+        "packagesPath": "C:\\Users\\ABC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ABC\\Desktop\\Sample\\AUA_WebApi_DotNet6_V1.1\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.WebUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ABC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\ABC\\source\\repos\\WebApplicationNugetPakage\\ClassLibraryTestNuget\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+﻿<script type="text/javascript">
+
+    const fileuploadId="#fileUpload";
+
+    function uploadFile(){
+
+        $.ajax({
+            type: "POST",
+            url: "https://localhost:7032/api/V1.0/Document/UploadAysnc",
+            data: createRequest(),
+            processData: false,
+            contentType: false,
+            dataType: "json",
+            success: function (response) {
+               manageResponse(response);
+            },
+            failure: function (response) {
+
+                alert(response.responseText);               
+            },
+            error: function (response) {
+                alert(response.responseText);
+            }
+        });
+
+        function manageResponse(response)
+        {
+             if(response.isSuccess)
+                alert("ّThe file was uploaded successfully");
+                else
+                alert("ّ Error in upload file ");
+        }
+
+        function  createRequest(){
+             var file = new FormData();
+             var fileContent = $(fileuploadId)[0].files[0];
+             file.append('File', fileContent);
+
+             return file;
+        }
+
+        function clearUploader(){
+              $(fileuploadId).replaceWith(input.val('').clone(true));
+            $(fileuploadId).innerHeight('');
+        }
+    }
+</script>

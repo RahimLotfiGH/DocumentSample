@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="text-center" >
+    <h1 class="display-4">Welcome to Document list</h1>
+    <hr />
+
+</div>
+<div class="text-center" id="lodingDiv" >
+   <img src="~/images/spinner.gif" style="width:100px;height:100px"/>
+   
+</div>
+ 
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">FileName</th>
+            <th scope="col">Icon</th>            
+            <th scope="col">FileType</th>
+            <th scope="col">UploadDate</th>
+            <th scope="col">DownloadCount</th>
+            <th scope="col">Download</th>
+        </tr>
+    </thead>
+    <tbody id="Tbody">
+    </tbody>
+
+</table>
+
+<partial name="ShowDocumentJs" ></partial>
